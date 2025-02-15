@@ -65,7 +65,7 @@ sudo ./tar_backup.sh
 
 ----------
 
-### 🧹 **2. Cleaning Up Old Backups**
+### ✅ **2. Cleaning Up Old Backups**
 
 To **delete backups older than 3 days**, run:
 
