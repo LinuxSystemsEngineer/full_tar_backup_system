@@ -34,7 +34,7 @@ FULL TAR BACKUP is a simple and effective Bash script solution for **creating, m
 2. Change directories into the newly cloned repo
 
   ```bash
-   cd full-tar-backup
+   cd full_tar_backup_system
 ```
 
 4.  Grant execution permissions to all scripts:
