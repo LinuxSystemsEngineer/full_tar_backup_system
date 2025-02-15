@@ -28,7 +28,7 @@ FULL TAR BACKUP is a simple and effective Bash script solution for **creating, m
 1. Clone this repository:
 
   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/full-tar-backup.git
+   git clone https://github.com/LinuxSystemsEngineer/full_tar_backup_system.git
 ```
 
 2. Change directories into the newly cloned repo
