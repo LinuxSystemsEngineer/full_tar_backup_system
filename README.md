@@ -60,7 +60,7 @@ sudo ./tar_backup.sh
 ```
 
 -   This will generate a `full-tar-backup.tar.gz` file in the current directory.
--   The script **excludes** unnecessary system paths (`/proc,` `/dev,` `/sys,` etc.).
+-   The script **excludes** unnecessary system paths (`/proc,` `/lost+found,` `/mnt,` `/run,` `/tmp`).
 -   It **preserves file ownership, groups, and permissions**.
 
 ----------
