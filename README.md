@@ -37,10 +37,10 @@ FULL TAR BACKUP is a simple and effective Bash script solution for **creating, m
    cd full_tar_backup_system
 ```
 
-4. Grant execution permissions to all scripts:
+3. Grant permissions to all .sh files in the current working directory:
     
-   ```bash
-chmod +x tar_backup.sh tar_cleanup.sh tar_restore.sh
+  ```bash
+   chmod +x *.sh
 ```
     
 
