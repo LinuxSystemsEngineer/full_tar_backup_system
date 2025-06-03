@@ -46,6 +46,20 @@ FULL TAR BACKUP is a simple and effective Bash script solution for **creating, m
 
 ----------
 
+## 🚨 **Requirements Instructions**  
+### ✴️ **1. Mandatory script modification before use:**  
+
+For this program to function correctly, you must modify both `./tar_backup.sh` and `./tar_cleanup.sh` before running them.  
+
+**Action required:**  
+
+Edit both files and replace all instances of `<username>` with your actual username.  
+
+**Example:**  
+FIND `<username>` and REPLACE with `jdoe`
+
+----------
+
 ## 🔄 **Usage Guide**
 
 Run with **sudo** to ensure proper permissions.
@@ -56,7 +70,7 @@ To **create a full system backup**, run:
 
 
    ```bash
-sudo ./tar_backup.sh
+bash ./tar_backup.sh
 ```
 
 -   This will generate a `full-tar-backup.tar.gz` file in the current directory.
@@ -71,7 +85,7 @@ To **delete backups older than 3 days**, run:
 
 
    ```bash
-sudo ./tar_cleanup.sh
+bash ./tar_cleanup.sh
 ```
 
 This script automatically finds and removes old `.tar.gz` backups, helping you save disk space.
@@ -84,7 +98,7 @@ Run the interactive restore guide:
 
 
    ```bash
-sudo ./tar_restore.sh
+bash ./tar_restore.sh
 ```
 
 You will see a menu explaining **how to restore different types of backups**.
