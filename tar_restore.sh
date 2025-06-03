@@ -16,7 +16,7 @@ while true; do
     echo "1) Restore a specific file from full_tar_backup.tar.gz"
     echo "2) Restore an entire directory from full_tar_backup.tar.gz"
     echo "3) Restore the entire backup to the ./restore directory"
-    echo "4) Restore the full backup to the root directory (⚠ USE WITH CAUTION ⚠)"
+    echo "4) Restore the full backup to the root directory ( ⚠ USE WITH CAUTION ⚠ )"
     echo "5) Exit"
     echo ""
     read -rp "Enter your choice (1-5): " choice
@@ -73,4 +73,3 @@ while true; do
             ;;
     esac
 done
-
