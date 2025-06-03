@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Determine the directory where this script is located
-backup_dir="$(dirname "$(realpath "$0")")"
+backup_dir="/home/<username>/backups"
 
 # Name of the backup file, based on the current date
 mybackupname="$backup_dir/$(date +%Y-%m-%d-%H%M%S)-full-tar-backup.tar.gz"
@@ -37,12 +37,12 @@ human_readable_duration() {
 }
 
 # Log file path
-logfile="./log_backup.log"
+logfile="/home/<username>/backups/log_backup.log"
 touch "$logfile"
 chmod 664 "$logfile"
 
 # Create the backup using tar, preserving file attributes
-if ! tar --same-owner --preserve-permissions -czf "$mybackupname" "${excludes[@]}" / 2>/dev/null; then
+if ! sudo tar --same-owner --preserve-permissions -czf "$mybackupname" "${excludes[@]}" / 2>/dev/null; then
   echo "$(date +"%Y-%m-%d %H:%M:%S") ERROR: tar failed" | tee -a "$logfile"
   exit 1
 else
@@ -50,4 +50,3 @@ else
   duration=$(( $(date '+%s') - $start ))
   echo "$(date +"%Y-%m-%d %H:%M:%S") SUCCESS: Backup completed - File: $mybackupname | Size: $size | Duration: $(human_readable_duration "$duration")" | tee -a "$logfile"
 fi
-
